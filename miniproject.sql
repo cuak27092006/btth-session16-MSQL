@@ -99,8 +99,7 @@ AND maintenance_date < '2024-01-01';
 -- CÂU 1
 SELECT *
 FROM Rentals
-WHERE  '2025-01-01'< start_date
-AND start_date < '2025-03-31';
+WHERE start_date BETWEEN '2025-01-01' AND '2025-03-31';
 
 -- CÂU 2
 SELECT full_name, phone_number
@@ -164,7 +163,7 @@ FOR EACH ROW
 BEGIN
 
 END //
-DELIMITER 
+DELIMITER ;
 
 -- PHẦN 6
 -- CÂU 1
